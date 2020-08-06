@@ -67,9 +67,13 @@ Write a function called `inning` that generates a random number of points that a
 
 function inning(/*Code Here*/){
 
-    /*Code Here*/
+    const score = Math.floor(Math.random() * 3);
+
+    return score;
 
 }
+
+console.log(inning());
 
 /* Task 3: finalScore()
 
