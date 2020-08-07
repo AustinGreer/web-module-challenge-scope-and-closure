@@ -28,18 +28,18 @@ function processFirstItem(stringList, callback) {
  * 
  * 1. What is the difference between counter1 and counter2?
  * 
- *      counter1 contains the function countMaker, which declares the variable count (making it available locally), then nesting a function which returns count++.
+ *      counter1 contains the function countMaker(), which declares the variable count, making it available locally, then nesting a function which returns count++.
  * 
  *      counter2 declares count outside of function, making it available globally, then has a function that simply returns count++.
  * 
  * 2. Which of the two uses a closure? How can you tell?
  * 
- *      Scenario 1 uses closure. It declares a variable inside a function, then nests another function inside the original one.
+ *       counter1 uses closure. I can tell because the function countMaker() returns the nested function counter()
  * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
  * 
  *      Scenario 1 is preferable because it does not rely on a variable from the outside to run.
- *      You can use cenario 2 when you want to manipulate the data on a global scope.
+ *      You can use scenario 2 when you want to manipulate the data on a global scope.
  *
 */
 

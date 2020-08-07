@@ -42,6 +42,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+- Closures are basically functions that can work. A closure usually takes place when you have a function nested inside the function. The nested function has access to the variables on the outside.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +66,21 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+- The closure begins on line 49 in the code with the return statement and the aunonymous function nested inside the function personalDice.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+-Comparisons:
+  1. They both contain the function personalDice which contains the argument "Dan"
+  2. They both return const newRoll, which is used to calculate a random number between 0 and 6.
+
+-Differences
+  1. Since it is invoked twice, it is going to return random numbers that most likely will be different each time the code is ran.
+
 c. What is the lexical scope of `newRoll`? 
+
+- The aunonymous function. A const variable has block level scope. 
 
 ### Task 3 - Stretch Goals
 
