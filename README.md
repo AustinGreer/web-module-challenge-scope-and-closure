@@ -67,7 +67,7 @@ dansRoll();
 
 a. Where is closure used in this code? How can you tell?
 
-- The closure begins on line 49 in the code with the return statement and the aunonymous function nested inside the function personalDice.
+- The closure is used on line 52 when the nested function is returned.
 
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
 
